@@ -1,0 +1,32 @@
+body {
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+h1 {
+    color: red; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mainpagecontent{
+    color:blueviolet;
+}
+
+#funcalloutsection {
+    color:aqua; 
+}
+
+.clothes_images{
+    max-width: 100%;
+    height: auto;
+    display: none; 
+}
+
+.container {
+    display: flex; /* or inline-flex */
+  }
+
+#sun_image{
+        max-width: 100%;
+        height: auto;  
+}
