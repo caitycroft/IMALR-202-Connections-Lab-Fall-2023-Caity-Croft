@@ -4,29 +4,67 @@ body {
 }
 
 h1 {
-    color: red; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ff4da6;
+    text-align: center;
+    font-family: cursive;
+
+    @font-face {
+        font-family: ;
+        src: url(./);
+    }
 }
 
-.mainpagecontent{
-    color:blueviolet;
+.glowtext {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
-#funcalloutsection {
-    color:aqua; 
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
 }
 
-.clothes_images{
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#StyleByVibe {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 3px solid magenta;
+    padding: 10px;
+}
+
+.clothes_images {
     max-width: 100%;
     height: auto;
-    display: none; 
+    display: none;
 }
 
 .container {
-    display: flex; /* or inline-flex */
-  }
+    display: flex;
+    /* or inline-flex */
+}
 
-#sun_image{
-        max-width: 100%;
-        height: auto;  
+#sun_image {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
 }
