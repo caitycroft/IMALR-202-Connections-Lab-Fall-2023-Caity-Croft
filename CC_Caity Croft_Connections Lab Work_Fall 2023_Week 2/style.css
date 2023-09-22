@@ -1,0 +1,28 @@
+#container {
+    height: 100vh;
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+    background-image: url("The_land_of_Oz.png");
+    background-size: cover;
+    background-position-y: top;
+}
+
+#revealBtn {
+    font-family: 'Courier New', monospace;
+}
+
+#arrowBtn {
+    color: emerald;
+    text-shadow: 0 0 5px emerald;
+}
+
+.hidden {
+    display: none;
+}
+
+#secondText {
+display: none;
+text-align: center
+text-p
+
+}
