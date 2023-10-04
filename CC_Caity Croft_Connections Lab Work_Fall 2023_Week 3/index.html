@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard of Oz Limerick</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="whimsical-font">The incredible Wizard of Oz</h1>
+        <p class="whimsical-font" id="retirement-text">Retired from his business</p>
+        <button class="retro-button" onclick="replaceImageAndText()">Because</button>
+        <img src="wizard_of_oz.jpg" alt="Wizard of Oz" id="oz-image">
+    </div>
+    <script>
+        function replaceImageAndText() {
+            const ozImage = document.getElementById('oz-image');
+            ozImage.src = 'scientific_research.jpg';
+
+            const retirementText = document.getElementById('retirement-text');
+            retirementText.textContent = '';
+
+            const scrollingText = document.createElement('p');
+            scrollingText.className = 'scrolling-text';
+            scrollingText.textContent = 'Due to up-to-date science to most of his clients, ';
+
+            retirementText.appendChild(scrollingText);
+
+            const marqueeArrow = document.createElement('marquee');
+            marqueeArrow.className = 'emerald-marquee';
+            marqueeArrow.innerHTML = '<span>➤</span>';
+
+            retirementText.appendChild(marqueeArrow);
+
+            setTimeout(() => {
+                retirementText.textContent = "He wasn't the wizard he was";
+                ozImage.src = 'wizard_relaxing.jpg';
+            }, 5000); // After 5 seconds
+        }
+    </script>
+</body>
+</html>

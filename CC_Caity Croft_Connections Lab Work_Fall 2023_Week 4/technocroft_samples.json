@@ -1,0 +1,17 @@
+{
+    "samples": [
+        { "filename": "KICK 1.wav" , "class": "kick", "id":"audio_techno_vibe_1_kick"},
+        { "filename": "GROOVE 1.wav", "class": "groove", "id":"audio_techno_vibe_1_groove"},
+        { "filename": "BASS 1.wav", "class": "bass", "id":"audio_techno_vibe_1_bass"},
+        { "filename": "KICK 2.wav" , "class": "kick", "id":"audio_techno_vibe_2_kick"},
+        { "filename": "GROOVE 2.wav", "class": "groove", "id":"audio_techno_vibe_2_groove"},
+        { "filename": "BASS 2.wav", "class": "bass", "id":"audio_techno_vibe_2_bass"},
+        { "filename": "KICK 3.wav" , "class": "kick", "id":"audio_techno_vibe_3_kick"},
+        { "filename": "GROOVE 3.wav", "class": "groove", "id":"audio_techno_vibe_3_groove" },
+        { "filename": "BASS 3.wav", "class": "bass", "id":"audio_techno_vibe_3_bass" },
+        { "filename": "KICK 4.wav" , "class": "kick", "id":"audio_techno_vibe_4_kick"},
+        { "filename": "GROOVE 4.wav", "class": "groove", "id":"audio_techno_vibe_4_groove" },
+        { "filename": "BASS 4.wav", "class": "bass", "id":"audio_techno_vibe_4_bass" }
+    ]
+     
+}

@@ -1,0 +1,54 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    margin: auto;
+}
+
+#technocroft_heading {
+    display: flex;
+    justify-content: center;
+    font: Optima;
+}
+
+technocroft_catchphrase {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+audio {
+    display: none; 
+}
+
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 400px;
+}
+
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.full_sample_launchpad_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+}

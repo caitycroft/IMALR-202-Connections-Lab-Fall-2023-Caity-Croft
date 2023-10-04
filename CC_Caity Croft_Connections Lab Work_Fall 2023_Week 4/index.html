@@ -1,0 +1,205 @@
+<html>
+
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link src="app.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <!--//do I link technocroft_samples.json file as well or....-->
+
+
+    <title>TECHNOCROFT Music Synthesizer</title>
+</head>
+
+<body>
+    <!--/////////////INSTRUCTIONS////////////////////////////
+    //1. Add in Technocroft Heading & Style w/ CSS
+    //2. Add subheading and style w/ CSS
+    //3. Add HTML/CSS Grid for the SAMPLER PADS
+    //4 rows, 3 columns
+    //3.1. Assign Class & IDs to the following
+    //class = "techno_vibe1"
+    //class = "techno_vibe2"
+    //class = "techno_vibe3"
+    //class = "techno-vibe4"
+
+    //class = "techno_style_1"
+    //id = "techno_vibe_1_kick" class = "kick_group"
+    //id = "techno_vibe_1_groove"
+    //id = "techno_vibe_1_bass" class = "bass_group"
+    //class = "techno_style_2"
+    //id = "techno_vibe_2_kick" class = "kick_group"
+    //id = "techno_vibe_2_groove"
+    //id = "techno_vibe_2_bass" class = "bass_group"
+    //class = "techno_style_3"
+    //id = "techno_vibe_3_kick" class = "kick_group"
+    //id = "techno_vibe_3_groove"
+    //id = "techno_vibe_3_bass" class = "bass_group"
+    //class = "techno-style_4"
+    //id = "techno_vibe_4_kick" class = "kick_group"
+    //id = "techno_vibe_4_groove"
+    //id = "techno_vibe_4_bass" class = "bass_group"
+
+    //3.2. Assign each of the 12 elements to a space on the GRID
+    //4. Add X-Axis Button Heading Labels -- Groove Element Category
+    //3 columns -- "Fo-undation"----"Groove"----"Bass"
+
+    //5. Add Y-Axis Button Heading Labels -- Sub-Genre Category
+    //4 rows ---- "Vibe 1"----"Vibe 2"----"Vibe 3"----"Vibe 4"
+    //6. Add Samples for each row into a JSON file
+    //7. Fetch JSON Data & confirm the dataset is accessable & Catch any errors
+    //8. Link filepaths to each sample in each array -> CAN WE LINK THE JSON FILE DIRECTLY IN THE ELEMENT NAME WITH THE
+    CLASS & ID TAGS??
+    //8.1. Add in console.logs to make sure that all 12 are successfully liked to their elements/grid locations
+    //9. BUTTON LOGIC
+    //Each button should start in an "off" state and play when "mouseClicked/buttonPressed" until the button is pressed
+    again, which will stop the audio playback
+
+    //For kick loops, only one can play at a time -- so the init. logic applies, but if another kick button/grid area is
+    clicked, then pause existing, play new kick
+    //All kicks should pause if clicked a second time, like the other buttons
+    //SAME APPLIES TO BASS
+    //For BASS loops, only one can play at a time -- so the init. logic applies, but if another BASS button/grid area is
+    clicked, then pause existing, play new BASS
+    //All BASSES should pause if clicked a second time, like the other buttons
+
+    //If time, create a slight differences between to the kick area/buttons (like a rectangle around the buttons so the
+    user knows they're different)
+    //If time, create a slight differences between to the bass area/buttons (like a rectangle around the buttons so the
+    user knows they're different)
+    
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //1. Add in Technocroft Heading & Style w/ CSS-->
+    <!--//2. Add subheading and style w/ CSS-->
+    <section>
+        <h1 id="technocroft_heading" class="Technocroft_heading">TECHNOCROFT</h1>
+        <h2 id="technocroft_catchphrase" class="catchphrase">"Croft your own techno right here in the browser"</h2>
+    </section>
+
+
+    <div id="audio_container">
+        
+
+    </div>
+
+    <!--//3. Add HTML/CSS Grid for the SAMPLER PADS
+    //4 rows, 3 columns-->
+
+    <!-- <audio id="audio_techno_vibe_1_kick" src="/technocroft_samples_audio/KICK 1.wav" controls loop></audio>
+    <audio id="audio_techno_vibe_1_groove" src="/technocroft_samples_audio/GROOVE 1.wav" controls loop></audio>
+    <audio id="audio_techno_vibe_1_bass" src="/technocroft_samples_audio/BASS 1.wav" controls loop></audio>
+
+    <audio id="audio_techno_vibe_2_kick" src="/technocroft_samples_audio/KICK 2.wav" controls loop></audio>
+    <audio id="audio_techno_vibe_2_groove" src="/technocroft_samples_audio/GROOVE 2.wav" controls loop></audio>
+    <audio id="audio_techno_vibe_2_bass" src="/technocroft_samples_audio/BASS 2.wav" controls loop> </audio>
+
+    <audio id="audio_techno_vibe_3_kick" src="/technocroft_samples_audio/KICK 3.wav" controls loop></audio>
+    <audio id="audio_techno_vibe_3_groove" src="/technocroft_samples_audio/GROOVE 3.wav" controls loop></audio>
+    <audio id="audio_techno_vibe_3_bass" src="/technocroft_samples_audio/BASS 3.wav" controls loop> </audio>
+
+    <audio id="audio_techno_vibe_4_kick" src="/technocroft_samples_audio/KICK 4.wav" controls loop></audio>
+    <audio id="audio_techno_vibe_4_groove" src="/technocroft_samples_audio/GROOVE 4.wav" controls loop></audio>
+    <audio id="audio_techno_vibe_4_bass" src="/technocroft_samples_audio/BASS 4.wav" controls loop> </audio> -->
+
+    <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br>  -->
+
+    <section class="grid-container">
+        <button id="play_vibe_1_all">Vibe 1 Play All</button>
+        
+        <div>Kick 1<input class="kick" type="checkbox" id="techno_vibe_1_kick" name="Kick 1"></div>
+        <div>Groove 1<input class="groove" type="checkbox" id="techno_vibe_1_groove" name="Groove 1"></div>
+        <div>Bass 1<input class="bass" type="checkbox" id="techno_vibe_1_bass" name="Bass 1"></div>
+
+        <button id="play_vibe_2_all">Vibe 2 Play All</button>
+        <div>Kick 2<input class="kick" type="checkbox" id="techno_vibe_2_kick" name="Kick 2"> </div>
+        <div>Groove 2<input class="groove" type="checkbox" id="techno_vibe_2_groove" name="Groove 2"> </div>
+        <div>Bass 2<input class="bass" type="checkbox" id="techno_vibe_2_bass" name="Bass 2"> </div>
+
+        <button id="play_vibe_3_all">Vibe 3 Play All</button>
+        <div>Kick 3<input class="kick" type="checkbox" id="techno_vibe_3_kick" name="Kick 3"> </div>
+        <div>Groove 3<input class="groove" type="checkbox" id="techno_vibe_3_groove" name="Groove 3"> </div>
+        <div>Bass 3<input class="bass" type="checkbox" id="techno_vibe_3_bass" name="Bass 3"> </div>
+
+        <button id="play_vibe_4_all">Vibe 4 Play All</button>
+        <div> Kick 4<input class="kick" type="checkbox" id="techno_vibe_4_kick" name="Kick 4"> </div>
+        <div>Groove 4<input class="groove" type="checkbox" id="techno_vibe_4_groove" name="Groove 4"> </div>
+        <div>Bass 4<input class="bass" type="checkbox" id="techno_vibe_4_bass" name="Bass 4"> </div>
+    </section>
+
+    <!-- <section class="grid-container">
+
+        <div class="techno_style_1_container">
+            <button id="play_vibe_1_all"> PLAY</button>
+            <button id="techno_vibe_1_kick" class="kick_group">Kick 1 </button>
+            <button id="techno_vibe_1_groove" class="bass_group">Groove 1</button>
+            <button id="techno_vibe_1_bass">Bass 1</button>
+        </div>
+
+        <div class="techno_style_2_container">
+            <button id="techno_vibe_2_kick" class="kick_group">Kick 2 </button>
+            <button id="techno_vibe_2_groove">Groove 2</button>
+            <button id="techno_vibe_2_bass" class="bass_group">Bass 2 </button>
+        </div>
+
+        <div class="techno_style_3_container">
+            <button id="techno_vibe_3_kick" class="kick_group">Kick 3</button>
+            <button id="techno_vibe_3_groove">Groove 3 </button>
+            <button id="techno_vibe_3_bass" class="bass_group">Bass 3 </button>
+        </div>
+
+        <div class="techno-style_4_container">
+            <button id="techno_vibe_4_kick" class="kick_group">Kick 4</button>
+            <button id="techno_vibe_4_groove">Groove 4 </button>
+            <button id="techno_vibe_4_bass" class="bass_group">Bass 4 </button>
+        </div>
+
+
+    </section> -->
+
+
+    <!-- <img class="clothes_images" id="techno_image" src="IMAGES/technoPerformancewear.png"
+            alt="classic techno vibes performance clothes selection...all black everything" />
+        <img class="clothes_images" id="rock_image" src="./IMAGES/rock performancewear.png"
+            alt="classic rock n roll clothing...leather and ripped denim" />
+        <img class="clothes_images" id="opera_image" src="./IMAGES/OPERA PERFORMANCEWEAR white background.png"
+            alt="classic opera performance clothes selection" />
+       -->
+
+
+    <!--//3.2. Assign each of the 12 elements to a space on the GRID
+    //4. Add X-Axis Button Heading Labels -- Groove Element Category
+    //3 columns --- "Foundation"----"Groove"----"Bass"
+
+    //5. Add Y-Axis Button Heading Labels -- Sub-Genre Category
+    //4 rows ---- "Vibe 1"----"Vibe 2"----"Vibe 3"----"Vibe 4"
+    //6. Add Samples for each row into a JSON file
+    //7. Fetch JSON Data & confirm the dataset is accessable & Catch any errors
+    //8. Link filepaths to each sample in each array -> CAN WE LINK THE JSON FILE DIRECTLY IN THE ELEMENT NAME WITH THE
+    CLASS & ID TAGS??
+    //8.1. Add in console.logs to make sure that all 12 are successfully liked to their elements/grid locations
+    //9. BUTTON LOGIC
+    //Each button should start in an "off" state and play when "mouseClicked/buttonPressed" until the button is pressed
+    again, which will stop the audio playback
+    -->
+
+
+
+
+    <!--//The links below are for linking p5.jS library and sound library add-ons if necessary-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="p5.js"></script>
+</body>
+
+</html>
