@@ -1,0 +1,14 @@
+{
+  "name": "cc_caity-croft_connections-lab-work_fall-2023_week-6",
+  "version": "1.0.0",
+  "description": "Caity's First Server...yay",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Caity Croft",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
